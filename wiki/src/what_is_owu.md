@@ -9,7 +9,7 @@ As such the core game will probably be written by me but I am open to new ideas 
 - Efficient -> [made in Rust](https://doc.rust-lang.org/stable/book/)
   - uses the [bevy game engine](https://bevyengine.org/)
 - Moddable: using bevy plugins you can change most of the game  
-  I strive to make the documentation as useful as possible. Do not hesitate to read rustdoc and please let me know if its bad somewhere.
+  I strive to make the documentation as useful as possible. Do not hesitate to [read rustdoc](https://zentropivity.github.io/owu/api/owu/) and please [let me know](https://matrix.to/#/#owu_modding:zentropivity.eu) if its bad somewhere.
 - Futuristic fantasy
   - the world is home to magic and wonders, with the Humans extinct what will happen to their creations and the world?
 - Skills skills skills: you will know what you will know  
@@ -17,10 +17,13 @@ As such the core game will probably be written by me but I am open to new ideas 
 
 ## Where is owu?
 
-- Matrix rooms:
-  - [\#owu_discussion:zentropivity.eu](https://matrix.to/#/#owu_discussion:zentropivity.eu)
+- [Zentropivity/owu repository](https://github.com/Zentropivity/owu)
+- [API docs - rustdoc](https://zentropivity.github.io/owu/api/owu/)
 - [Wiki - developer notes](https://zentropivity.github.io/owu/wiki/)
-- [API docs - rustdoc](https://zentropivity.github.io/owu/api/)
+- Matrix:
+  - [\#owu:zentropivity.eu](https://matrix.to/#/#owu:zentropivity.eu) (space that fails to list its rooms...)
+  - [\#owu_discussion:zentropivity.eu](https://matrix.to/#/#owu_discussion:zentropivity.eu)
+  - [\#owu_modding:zentropivity.eu](https://matrix.to/#/#owu_modding:zentropivity.eu)
 - TODO: publish my launcher on steam.
 
 ## Motivation
@@ -61,5 +64,10 @@ Something like:
 - Ocean Waits Under
 - Ordinary Wet Underwear
 - Orbs Want Unknown
+- Oh What U?!
+- Oily Wind Underestimated
+- Obvious War Underground
+- Old Weary Upperbody
+- Or Word Understanding
 
 Or whatever you can think of... Let me know if you think of more good interpretations.

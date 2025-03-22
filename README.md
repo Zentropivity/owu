@@ -20,7 +20,10 @@ TODO... steam page
 You can chat with other thinkers on:
 
 - [Discussions here](https://github.com/Zentropivity/owu/discussions)
-- [\#owu_discussion:zentropivity.eu](https://matrix.to/#/#owu_discussion:zentropivity.eu)
+- Matrix:
+  - [\#owu:zentropivity.eu](https://matrix.to/#/#owu:zentropivity.eu) (space that fails to list its rooms...)
+  - [\#owu_discussion:zentropivity.eu](https://matrix.to/#/#owu_discussion:zentropivity.eu)
+  - [\#owu_modding:zentropivity.eu](https://matrix.to/#/#owu_modding:zentropivity.eu)
 
 ## License
 
