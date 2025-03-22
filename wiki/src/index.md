@@ -23,10 +23,14 @@ Yet there is an ecosystem that thrives. Magic is in the core of it all.
 - Sandbox: the world is yours to shape too, do mind other inhabitants though
 - Physics based: I want it to be reasonably physically accurate while fast
 
-## Factions
+### Factions
 
 They exist in the world and players may interact with them, one of them is chosen at start for Frame.
 
 - [Cyber](./factions/cyber.md) - robot; crafty
 - [Blob](./factions/blob.md) - slime; hungry
 - [Wyvern](./factions/wyvern.md) - lizard, dragon; wise
+
+## Tech
+
+- [World representation](./world_representation.md)
