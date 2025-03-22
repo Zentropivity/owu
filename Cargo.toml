@@ -1,0 +1,49 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+package.license = "MIT OR Apache-2.0"
+package.authors = ["Zentropivity <zen@zentropivity.eu>"]
+package.categories = ["games", "game-development"]
+package.edition = "2024"
+package.version = "0.1.0"
+# TODO create a home page
+# package.homepage = "https://owu.zentropivity.eu"
+
+[workspace.dependencies]
+owu_core = { version = "0.1", path = "crates/owu_core", default-features = true }
+
+# NOTE: bevy main is hot
+# owu_core adds some basic bevy features that are used but mods are free to add more features
+# but they should still depend on bevy main
+# TODO some more experimentation on feature unification
+[workspace.dependencies.bevy]
+git = "https://github.com/bevyengine/bevy"
+rev = "116484b37b02dbb969c62cd6093e25e26c1c27e8"
+default-features = false
+
+# Enable a small amount of optimization in the dev profile.
+[profile.dev]
+opt-level = 1
+
+# Enable a large amount of optimization in the dev profile for dependencies.
+[profile.dev.package."*"]
+opt-level = 3
+
+[package]
+name = "owu"
+description = "Provides a central dependency for all your owu needs. You can use owu_* crates too if you prefer."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+categories.workspace = true
+
+[features]
+default = [
+  "linux"
+]
+linux = ["owu_core/linux"]
+windows = ["owu_core/windows"]
+
+[dependencies]
+owu_core.workspace = true

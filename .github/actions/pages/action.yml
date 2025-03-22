@@ -1,0 +1,71 @@
+name: Build Github pages
+description: Build Github pages for api docs and wiki
+runs:
+  using: composite
+  steps:
+    - name: Get bevy dependencies (+bevy/wayland)
+      run: sudo apt install -y g++ pkg-config libx11-dev libasound2-dev libudev-dev libxkbcommon-x11-0 libwayland-dev libxkbcommon-dev
+      shell: bash
+    - name: Ensure rust stable
+      run: rustup update stable && rustup default stable
+      shell: bash
+    - name: Install mdbook for wiki
+      uses: taiki-e/install-action@v2
+      with:
+        tool: mdbook@0.4.47
+    - name: Install mdbook-autosummary preprocessor
+      uses: taiki-e/install-action@v2
+      with:
+        tool: mdbook-autosummary@0.1.9
+    - name: Install mdbook-alerts preprocessor
+      uses: taiki-e/install-action@v2
+      with:
+        tool: mdbook-alerts@0.7.0
+
+    - name: Cache restore target
+      id: cache-target
+      continue-on-error: true
+      uses: actions/cache/restore@v4
+      with:
+        path: ./target
+        key: target-cache
+    - name: Build docs
+      run: cargo doc
+      shell: bash
+    - name: Delete previous target cache
+      continue-on-error: true
+      if: steps.cache-target.outputs.cache-hit == 'true'
+      run: gh cache delete target-cache
+      shell: bash
+    - name: Cache save target
+      id: cache-target-save
+      uses: actions/cache/save@v4
+      with:
+        path: ./target
+        key: target-cache
+    - name: Move docs output
+      run: mv ./target/doc ./pages/api
+      shell: bash
+
+    - name: Initialize empty SUMMARY
+      working-directory: ./wiki/src
+      run: touch SUMMARY.md
+      shell: bash
+    - name: Build wiki using mdbook
+      working-directory: ./wiki
+      run: mdbook build
+      shell: bash
+    - name: Move wiki output
+      run: mv wiki/book pages/wiki
+      shell: bash
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        # Upload pages directory
+        path: './pages/'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

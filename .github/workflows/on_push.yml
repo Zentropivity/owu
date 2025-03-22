@@ -1,0 +1,33 @@
+name: Maybe deploy pages
+
+on:
+  # run on push to main
+  push:
+    branches: ["main"]
+
+env:
+  CARGO_TERM_COLOR: always
+  GH_TOKEN: ${{ github.token }}
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy-pages:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        if: github.repository == 'Zentropivity/owu'
+      - name: Build pages
+        uses: ./.github/actions/pages
+        if: github.repository == 'Zentropivity/owu'

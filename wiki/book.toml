@@ -1,0 +1,25 @@
+[book]
+authors = ["Zentropivity"]
+language = "en"
+multilingual = false
+src = "src"
+title = "owu Wiki"
+
+[preprocessor.autosummary]
+# Controls the name of the index.md file that is looked for in each folder.
+index-name = "index.md"
+# If true, files that start with . or _ are ignored.
+ignore-hidden = false
+
+[preprocessor.alerts]
+after = ["autosummary"]
+
+# This is so that mdBook doesn't start regenerating 
+# deleted folders before autosummary can remove them from SUMMARY.md
+[build]
+create-missing = false
+
+[output.html]
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-alerts.css"]
+default-theme = "latte"
+preferred-dark-theme = "macchiato"

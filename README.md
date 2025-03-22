@@ -1,0 +1,32 @@
+# owu
+
+It intends to be an easily moddable multiplayer sandbox game that I can work on in my spare time. 
+
+> The world moves on...
+> Humans are no longer part of it, are they? I wonder what happened to them...
+>
+> Yet there is an ecosystem that thrives. Magic is in the core of it all.
+
+Learn more here:
+
+- [Wiki - developer notes](https://zentropivity.github.io/owu/wiki/)
+- [API docs - rustdoc](https://zentropivity.github.io/owu/api/owu/)
+- [The repository](https://github.com/Zentropivity/owu)
+
+TODO... steam page
+
+## Community
+
+You can chat with other thinkers on:
+
+- [Discussions here](https://github.com/Zentropivity/owu/discussions)
+- [\#owu_discussion:zentropivity.eu](https://matrix.to/#/#owu_discussion:zentropivity.eu)
+
+## License
+
+owu is free, open source and permissively licensed! Except where noted (below and/or in individual files), all code in this repository is dual-licensed under either:
+
+- MIT License ([LICENSE-MIT](./LICENSE-MIT) or http://opensource.org/licenses/MIT)
+- Apache License, Version 2.0 ([LICENSE-APACHE](./LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+
+at your option. This means you can select the license you prefer.
