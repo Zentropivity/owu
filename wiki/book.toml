@@ -23,3 +23,8 @@ create-missing = false
 additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-alerts.css"]
 default-theme = "latte"
 preferred-dark-theme = "macchiato"
+
+# to fold sections
+[output.html.fold]
+enable = true
+level = 0
