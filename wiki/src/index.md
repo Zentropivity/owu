@@ -33,4 +33,4 @@ They exist in the world and players may interact with them, one of them is chose
 
 ## Tech
 
-- [World representation](./world_representation.md)
+- [World representation](./tech/world_representation.md)
