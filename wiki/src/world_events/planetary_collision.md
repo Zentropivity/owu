@@ -1,6 +1,6 @@
 # Planetary Collision
 
-The Core of the planet calls out to you as you face annihilation: a huge object (another planet perhaps?) rapidly approaches your location.
+Atlas calls out to you as you face annihilation: a huge object (another planet perhaps?) rapidly approaches your location.
 
 ![Planetary Collision](./planetary_collision.svg)
 

@@ -10,27 +10,29 @@
 moves on...  
 Humans are no longer part of it, are they?
 
-Yet there is an ecosystem that thrives. Magic is in the core of it all.
+Yet there is an ecosystem that thrives. Magic has shaped the world.
 
-## Core mechanics
+## Core Mechanics
 
-- Souls: every living being has one
+- Souls: everyone from a Tribe has one
   - don't let yours get captured...
-- Frames: every living being should have one...
-  - may be swapped with the right knowledge...
+- Frames: every living being should have at least one...
+  - may be swapped with the right knowledge, you will be able to store more of them
 - Skills: may be found/crafted/learned/acquired out there
-  - from your basic abilities to your fanciest magics
+  - from basic abilities to the fanciest of magics
 - Sandbox: the world is yours to shape too, do mind other inhabitants though
 - Physics based: I want it to be reasonably physically accurate while fast
 
-### Factions
+### Tribes
 
-They exist in the world and players may interact with them, one of them is chosen at start for Frame.
+The groups of intelligent beings that exist in the world. Players may interact with them, one of them is chosen for starting Frame.
 
-- [Cyber](./factions/cyber.md) - robot; crafty
-- [Blob](./factions/blob.md) - slime; hungry
-- [Dragon](dragon.md) - winged lizard; wise
+- [Cyber](./tribes/cyber.md) - robot; crafty
+- [Blob](./tribes/blob.md) - slime; hungry
+- [Dragon](./tribes/dragon.md) - magical winged lizard; wise
 
 ## Tech
 
-- [World representation](./tech/world_representation.md)
+Ideas on how the game would be achieved, some complicated details.
+
+- [World Representation](./tech/world_representation.md)

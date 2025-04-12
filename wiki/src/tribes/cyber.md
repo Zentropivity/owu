@@ -18,6 +18,6 @@ Energy makes them move, metal bodies make them durable. As a start, an internal 
   - swapping your parts may take some time at no additional cost
 - upgrade your parts to make them more powerful
 
-### Mechanical wizard
+### Mechanical Wizard
 
 - harness the power of magical crystals among other things to build weapons or tools

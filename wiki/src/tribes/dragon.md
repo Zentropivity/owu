@@ -6,7 +6,7 @@ Wise magical beasts that are lizard-like, usually with wings that help them fly.
 
 Omnivores, physical exercise tires them out slowly making them hungry.
 
-### Wizard lizard
+### Wizard Lizard
 
 - they have sharp mana detection, knowing if and where a spell is cast nearby
   - with experience they may even determine what spell is used
@@ -19,7 +19,7 @@ Omnivores, physical exercise tires them out slowly making them hungry.
 - upon reaching certain criterias, they may evolve into different types of Dragon
 - each Dragon type comes with different magical and physical abilities
 
-### Living library
+### Living Library
 
 - they have exceptional memory, making them remember what they have witnessed/heard
   - you may access your memories at any time to read what has been said, ...
