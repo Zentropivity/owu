@@ -1,3 +1,0 @@
-# Wyvern
-
-TODO

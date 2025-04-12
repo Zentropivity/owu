@@ -14,7 +14,7 @@ Flat worlds are more straightforward to implement but I am not going to hold bac
     - Galactic scale
     - Each planet with own chunk coordinates
     - Complicated collision detection? Its just voxel with voxel on large scale.
-    - [Fun events are possibble...](../world_events/planetary_collision.md)
+    - [Fun events are possible...](../world_events/planetary_collision.md)
 - Against planet:
   - Gravity would not line up with the chunk coordinates, possibly making things difficult to reason about...
     - Some planetary coordinate system could help with that (like irl maps), conversion between them could be implemented

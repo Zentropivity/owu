@@ -8,7 +8,7 @@
 ## The World
 
 moves on...  
-Humans are no longer part of it, are they? I wonder what happened to them...
+Humans are no longer part of it, are they?
 
 Yet there is an ecosystem that thrives. Magic is in the core of it all.
 
@@ -29,7 +29,7 @@ They exist in the world and players may interact with them, one of them is chose
 
 - [Cyber](./factions/cyber.md) - robot; crafty
 - [Blob](./factions/blob.md) - slime; hungry
-- [Wyvern](./factions/wyvern.md) - lizard, dragon; wise
+- [Dragon](dragon.md) - winged lizard; wise
 
 ## Tech
 
